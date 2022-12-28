@@ -20,10 +20,10 @@ const to_do = [
 
 function changeItem(event) {
     const contLI = event.parentElement
+    contLI.classList.add("decorar")
     if (event.checked === false) {
         contLI.className = ""
     }
-    contLI.classList.add("decorar")
 }
 
 to_do.map((value) => {
